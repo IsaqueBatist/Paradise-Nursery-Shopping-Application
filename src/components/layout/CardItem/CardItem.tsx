@@ -1,31 +1,37 @@
 import React from 'react';
 import './styles.css';
 import Button from '../Button/Button.tsx';
+import { useDispatch } from 'react-redux';
+import Plant from '../../../interfaces/plant.ts';
+import { addToCart } from '../../../cartSlice.ts';
 
 interface CardItemProps{
-  image: string;
-  name: string;
-  price: string;
-  description: string;
+  plant: Plant;
 }
 
-const CardItem = ({image, name, price, description}: CardItemProps) => {
+const CardItem = ({plant}: CardItemProps) => {
+
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (item: Plant) => {
+    dispatch(addToCart(item));
+  }
+
   return (
     <div className='card-item'>
       <div className="sale">
         <p>SALE</p>
       </div>
       <div className="card-header">
-        <h2>{name}</h2>
+        <h2>{plant.name}</h2>
       </div>
       <div className="card-body">
         <div className="image-container">
-          <img src={image} alt={name} />
+          <img src={plant.image} alt={plant.name} />
         </div>
-        <p className='card-price'>${price}</p>
-        <p className='card-description'>{description}</p>
-        <Button content='Add to cart' />
-
+        <p className='card-price'>${plant.cost}</p>
+        <p className='card-description'>{plant.description}</p>
+        <Button onClick={() => handleAddToCart(plant)} content='Add to cart' />
       </div>
     </div>
   );
