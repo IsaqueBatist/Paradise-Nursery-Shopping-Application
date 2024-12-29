@@ -1,10 +1,14 @@
 import React from 'react';
-import LandingPage from './pages/landing-page/LandingPage.tsx';
 import "./globalStyles.css"
+import AppRoutes from './routes/Routes.tsx';
+import NavBar from './components/layout/navbar/NavBar.tsx';
 
 function App() {
   return (
-      <LandingPage/>
+    <>
+      <NavBar />
+      <AppRoutes />
+    </>
   );
 }
 
