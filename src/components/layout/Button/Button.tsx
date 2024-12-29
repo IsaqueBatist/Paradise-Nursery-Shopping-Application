@@ -3,12 +3,14 @@ import './style.css';
 
 interface ButtonProps{
   content: string;
+  type?: 'button' | 'submit' | 'reset';
+  messageType?: 'success' | 'error';
   onClick?: () => void;
 }
 
-const Button = ({content, onClick}: ButtonProps) => {
+const Button = ({content, onClick, type = 'button', messageType = 'success'}: ButtonProps) => {
   return (
-    <button onClick={onClick}>{content}</button>
+    <button className={messageType === 'success' ? 'success' : 'error'} type={type} onClick={onClick}>{content}</button>
   );
 };
 

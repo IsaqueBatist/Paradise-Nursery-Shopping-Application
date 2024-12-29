@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
-button{
+button {
   width: 40%;
-  color: white    ;
-  background-color: #4CB051;
+  color: white;
   border: none;
   border-radius: .5rem;
   cursor: pointer;
   padding: 1rem 1.2rem;
+}
+
+button.success {
+  background-color: #4CB051;
+}
+
+button.error {
+  background-color: #E74C3C;
 }
