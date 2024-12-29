@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css";
+import Button from '../../components/layout/Button/Button.tsx';
 
 const LandingPage = (props) => {
   return (
@@ -7,7 +8,7 @@ const LandingPage = (props) => {
       <div className="introduction-text">
         <h1 className='welcome-text'>Welcome To <span>Paradise Nursey</span></h1>
         <p>Where Green meets Serenity</p>
-        <button>Get started</button>
+        <Button content='Get started' />
       </div>
       <div className="enterprise-text">
         <p>Welcome to Paradise Nursery, where green meets serenity!</p>

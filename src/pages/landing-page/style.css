@@ -34,16 +34,6 @@
         font-size: 1.6rem;
         color: white;
     }
-    button{
-        width: 30%;
-        color: white    ;
-        background-color: #4CB051;
-        border: none;
-        border-radius: .5rem;
-        cursor: pointer;
-        padding: 1rem 1.2rem;
-    }
-
 }
 
 .enterprise-text{
