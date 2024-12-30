@@ -18,6 +18,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 10%;
     h2{
         font-size: 1.5rem;
     }
@@ -38,6 +39,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 90%;
     padding: 1rem;
 }
 .card-description{
@@ -48,10 +50,13 @@
 }
 .card-price{
   font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
   color:#DA9F9F;
 }
 .image-container{
-  width: 50%;
+  width: 100%;
+  height: 80%;
   background-color: yellow;
   img{
     width: 100%;

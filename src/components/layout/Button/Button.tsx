@@ -6,15 +6,15 @@ interface ButtonProps{
   type?: 'button' | 'submit' | 'reset';
   messageType?: 'success' | 'error';
   onClick?: () => void;
-  disabled?: boolean;
+  isdisabled?: boolean;
 }
 
-const Button = ({disabled, content, onClick, type = 'button', messageType = 'success'}: ButtonProps) => {
+const Button = ({isdisabled, content, onClick, type = 'button', messageType = 'success'}: ButtonProps) => {
   const getClassName = () => {
-    if (messageType === 'success') return 'success';
-    if (messageType === 'error') return 'error';
-    if (disabled) return 'disabled';
-    return '';
+    if (isdisabled) return 'disabled';
+    else if (messageType === 'success') return 'success';
+    else if (messageType === 'error') return 'error';
+    else return '';
   };
   return (
     <button className={getClassName()} type={type} onClick={onClick}>{content}</button>

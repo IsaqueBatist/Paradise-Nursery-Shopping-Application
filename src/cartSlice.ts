@@ -25,6 +25,24 @@ export const CartSlice = createSlice({
       if(existingItem) {
         existingItem.quantity = quantity;
       }
+    },
+    increaseItemQuantity: (state, action) => {
+      const {name} = action.payload;
+      const existingItem = state.items.find((item) => item.name === name);
+      if(existingItem) {
+        existingItem.quantity++;
+      }
+    },
+    decreaseItemQuantity: (state, action) => {
+      const {name} = action.payload;
+      const existingItem = state.items.find((item) => item.name === name);
+      if(existingItem) {
+        if(existingItem.quantity === 1) {
+          state.items = state.items.filter((item) => item.name !== name);
+        } else {
+          existingItem.quantity--;
+        }
+      }
     }
   },
 })
@@ -32,5 +50,7 @@ export const {
   addToCart,
   removeFromCart,
   updateQuantity,
+  increaseItemQuantity,
+  decreaseItemQuantity
 } = CartSlice.actions;
 export default CartSlice.reducer

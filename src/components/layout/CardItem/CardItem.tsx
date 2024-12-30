@@ -32,7 +32,7 @@ const CardItem = ({ plant }: CardItemProps) => {
         </div>
         <p className='card-price'>${plant.cost}</p>
         <p className='card-description'>{plant.description}</p>
-        <Button onClick={() => handleAddToCart(plant)} content='Add to cart' disabled={isAdded} />
+        <Button onClick={() => handleAddToCart(plant)} content='Add to cart' isdisabled={isAdded} />
       </div>
     </div>
   );
