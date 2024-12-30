@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+button {
+  width: 40%;
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  padding: 1rem 1.2rem;
+}
+
+.success {
+  background-color: #4CB051;
+}
+
+.error {
+  background-color: #E74C3C;
+}
+
+.disabled {
+  background-color: #BDC3C7;
+  cursor: not-allowed;
+}
