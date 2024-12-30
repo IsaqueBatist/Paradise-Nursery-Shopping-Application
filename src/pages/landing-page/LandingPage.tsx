@@ -1,14 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import "./style.css";
 import Button from '../../components/layout/Button/Button.tsx';
 
-const LandingPage = (props) => {
+const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div className='landing-page'>
       <div className="introduction-text">
         <h1 className='welcome-text'>Welcome To <span>Paradise Nursey</span></h1>
         <p>Where Green meets Serenity</p>
-        <Button content='Get started' />
+        <Button onClick={() => navigate('/product-listing')} content='Get started' />
       </div>
       <div className="enterprise-text">
         <p>Welcome to Paradise Nursery, where green meets serenity!</p>

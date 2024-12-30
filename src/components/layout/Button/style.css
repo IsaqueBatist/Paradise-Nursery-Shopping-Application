@@ -9,10 +9,15 @@ button {
   padding: 1rem 1.2rem;
 }
 
-button.success {
+.success {
   background-color: #4CB051;
 }
 
-button.error {
+.error {
   background-color: #E74C3C;
+}
+
+.disabled {
+  background-color: #BDC3C7;
+  cursor: not-allowed;
 }

@@ -1,21 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './styles.css';
 import Button from '../Button/Button.tsx';
 import { useDispatch } from 'react-redux';
 import Plant from '../../../interfaces/plant.ts';
 import { addToCart } from '../../../cartSlice.ts';
 
-interface CardItemProps{
+interface CardItemProps {
   plant: Plant;
 }
 
-const CardItem = ({plant}: CardItemProps) => {
-
+const CardItem = ({ plant }: CardItemProps) => {
   const dispatch = useDispatch();
+  const [isAdded, setIsAdded] = useState(false);
 
   const handleAddToCart = (item: Plant) => {
     dispatch(addToCart(item));
-  }
+    setIsAdded(true);
+  };
 
   return (
     <div className='card-item'>
@@ -31,7 +32,7 @@ const CardItem = ({plant}: CardItemProps) => {
         </div>
         <p className='card-price'>${plant.cost}</p>
         <p className='card-description'>{plant.description}</p>
-        <Button onClick={() => handleAddToCart(plant)} content='Add to cart' />
+        <Button onClick={() => handleAddToCart(plant)} content='Add to cart' disabled={isAdded} />
       </div>
     </div>
   );

@@ -1,29 +1,34 @@
 import React from 'react';
 import Button from '../layout/Button/Button.tsx';
 import './styles.css';
+import { useDispatch } from 'react-redux';
+import { removeFromCart } from '../../cartSlice.ts';
+import ItemsInCart from '../../interfaces/itemsInCart.ts';
 
-interface ShoppingCartCardProps{
-  price: number;
-  name: string;
-  image: string;
-}
 
-const ShoppingCartCard = ({price, name, image}: ShoppingCartCardProps) => {
+
+const ShoppingCartCard = ({cost, description, image, name, quantity}: ItemsInCart) => {
+  
+  const dispache = useDispatch()
+  const handleDeleteItem = (item: ItemsInCart) => {
+    dispache(removeFromCart(item))
+  }
+
   return (
     <div className='shopping-cart-card'>
       <div className="image-container">
-        <img src={image} alt="palceholder" />
+        <img src={image} alt={name} />
       </div>
       <div className="content-container">
         <h2>{name}</h2>
-        <p>${price}</p>
+        <p>${cost}</p>
         <div className="quantity-control">
           <button>-</button>
           <p>1</p>
           <button>+</button>
         </div>
-        <p>Total: ${price*2}</p>
-        <Button messageType='error' content='Delete' />
+        <p>Total: ${Number(cost)*quantity}</p>
+        <Button onClick={() => handleDeleteItem({cost: cost, name: name, image: image, description: description, quantity: quantity})} messageType='error' content='Delete' />
       </div>
     </div>
   );
