@@ -39,7 +39,9 @@
 }
 .nav{
   display: flex;
-  margin-left: -9rem;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
   ul{
     list-style: none;
   }
@@ -71,5 +73,14 @@
     top: 42%;
     left: 57%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .logoSection{
+    flex-direction: column;
+    img{
+      display: none;
+    }
   }
 }

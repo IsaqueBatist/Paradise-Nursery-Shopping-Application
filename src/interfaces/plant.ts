@@ -3,4 +3,5 @@ export default interface Plant{
   image: string;
   description: string;
   cost: string;
+  isAvailable: boolean;
 }

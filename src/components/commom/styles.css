@@ -2,10 +2,11 @@
 
 .shopping-cart-card{
   display: flex;
+  font-size: 1.5rem;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 40rem;
+  width: 30%;
   height: 20rem;
   background-color: white;
   padding: 1rem 1rem 1rem 0;
@@ -54,4 +55,24 @@
   justify-content: center;
   align-items: start;
   gap: 1rem;
+}
+
+@media screen and (max-width: 768px){
+  .shopping-cart-card{
+    width: 90%;
+  }
+  .quantity-control{
+    button{
+      font-size: 1.2rem;
+    }
+    p{
+      font-size: 1.3rem;
+    }
+  }
+  .image-container{
+    width: 30%;
+  }
+  .content-container{
+    width: 60%;
+  }
 }
