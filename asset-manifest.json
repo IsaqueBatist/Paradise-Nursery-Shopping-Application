@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/IsaqueBatist/paradise-nursery-shopping-application.git/static/css/main.0483379a.css",
-    "main.js": "/IsaqueBatist/paradise-nursery-shopping-application.git/static/js/main.cd45792c.js",
-    "static/media/greenhouse.jpg": "/IsaqueBatist/paradise-nursery-shopping-application.git/static/media/greenhouse.dc00952eeee5dd2bb5fe.jpg",
-    "static/media/shoppingcart.svg": "/IsaqueBatist/paradise-nursery-shopping-application.git/static/media/shoppingcart.60c93553eba3928e714c1e19f6bab120.svg",
-    "index.html": "/IsaqueBatist/paradise-nursery-shopping-application.git/index.html",
-    "static/media/plant.svg": "/IsaqueBatist/paradise-nursery-shopping-application.git/static/media/plant.55cb1fd989cab457736162af8ddc4115.svg",
-    "main.0483379a.css.map": "/IsaqueBatist/paradise-nursery-shopping-application.git/static/css/main.0483379a.css.map",
-    "main.cd45792c.js.map": "/IsaqueBatist/paradise-nursery-shopping-application.git/static/js/main.cd45792c.js.map"
+    "main.css": "/paradise-nursery-shopping-application/static/css/main.f9ea0a9a.css",
+    "main.js": "/paradise-nursery-shopping-application/static/js/main.73e988c4.js",
+    "static/media/greenhouse.jpg": "/paradise-nursery-shopping-application/static/media/greenhouse.dc00952eeee5dd2bb5fe.jpg",
+    "static/media/shoppingcart.svg": "/paradise-nursery-shopping-application/static/media/shoppingcart.60c93553eba3928e714c1e19f6bab120.svg",
+    "static/media/plant.svg": "/paradise-nursery-shopping-application/static/media/plant.55cb1fd989cab457736162af8ddc4115.svg",
+    "index.html": "/paradise-nursery-shopping-application/index.html",
+    "main.f9ea0a9a.css.map": "/paradise-nursery-shopping-application/static/css/main.f9ea0a9a.css.map",
+    "main.73e988c4.js.map": "/paradise-nursery-shopping-application/static/js/main.73e988c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.0483379a.css",
-    "static/js/main.cd45792c.js"
+    "static/css/main.f9ea0a9a.css",
+    "static/js/main.73e988c4.js"
   ]
 }
