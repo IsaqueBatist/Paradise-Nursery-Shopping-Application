@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes as Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes as Switch, Route } from 'react-router-dom';
 import LandingPage from '../pages/landing-page/LandingPage.tsx';
 import NavBar from '../components/layout/Navbar/NavBar.tsx';
 import ProductListingPage from '../pages/product-listing-page/ProductListingPage.tsx';
