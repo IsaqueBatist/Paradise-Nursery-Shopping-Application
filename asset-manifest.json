@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/paradise-nursery-shopping-application/static/css/main.f9ea0a9a.css",
-    "main.js": "/paradise-nursery-shopping-application/static/js/main.73e988c4.js",
+    "main.js": "/paradise-nursery-shopping-application/static/js/main.328e60b2.js",
     "static/media/greenhouse.jpg": "/paradise-nursery-shopping-application/static/media/greenhouse.dc00952eeee5dd2bb5fe.jpg",
     "static/media/shoppingcart.svg": "/paradise-nursery-shopping-application/static/media/shoppingcart.60c93553eba3928e714c1e19f6bab120.svg",
     "static/media/plant.svg": "/paradise-nursery-shopping-application/static/media/plant.55cb1fd989cab457736162af8ddc4115.svg",
     "index.html": "/paradise-nursery-shopping-application/index.html",
     "main.f9ea0a9a.css.map": "/paradise-nursery-shopping-application/static/css/main.f9ea0a9a.css.map",
-    "main.73e988c4.js.map": "/paradise-nursery-shopping-application/static/js/main.73e988c4.js.map"
+    "main.328e60b2.js.map": "/paradise-nursery-shopping-application/static/js/main.328e60b2.js.map"
   },
   "entrypoints": [
     "static/css/main.f9ea0a9a.css",
-    "static/js/main.73e988c4.js"
+    "static/js/main.328e60b2.js"
   ]
 }
