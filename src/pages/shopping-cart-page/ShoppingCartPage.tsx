@@ -7,6 +7,7 @@ import './styles.css';
 import Button from '../../components/layout/Button/Button.tsx';
 import ItemsInCart from '../../interfaces/itemsInCart.ts';
 import getAmountOfCart from '../../utils/getAmount.ts';
+import flowerVase from '../../assets/images/shopping-cart-page/flowerVase.png'
 
 const ShoppingCartPage = () => {
   const [totalAmount, setTotalAmount] = useState(0)   
@@ -22,7 +23,7 @@ const ShoppingCartPage = () => {
     <div className='shopping-cart-page'>
       <h2>Total Cart Amount: ${totalAmount}</h2>
       <div className="cart-items">
-        {items ? (items.map((item, index) => {
+        {items.length ? (items.map((item, index) => {
           return (
             <ShoppingCartCard 
               key={index}
@@ -33,7 +34,12 @@ const ShoppingCartPage = () => {
               image={item.image}
             />
           )
-        })) : ('No items in cart')}
+        })) : (
+          <>
+            <img src={flowerVase} alt="flowerVase" width={150} height={150} />
+            <p>Your cart is empty</p>
+          </>
+        )}
       </div>
       <div className="buttons-section">
         <Button content='Continue Shopping' onClick={() => navigate('/product-listing')} />

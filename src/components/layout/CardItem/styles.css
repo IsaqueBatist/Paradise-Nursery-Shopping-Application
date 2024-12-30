@@ -12,6 +12,11 @@
     border-radius: 1rem;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    &:hover{
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
 }
 .card-header{
     display: flex;
@@ -52,7 +57,8 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
-  color:#DA9F9F;
+  color:#2E3D16;
+  ;
 }
 .image-container{
   width: 100%;
